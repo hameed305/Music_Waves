@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music waves</title>
+    <style>
+      body {
+        background-color: hsla(0, 100%, 50%, 1);
+        background-image: radial-gradient(
+            at 40% 20%,
+            hsla(28, 100%, 74%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 80% 0%,
+            hsla(189, 100%, 56%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 0% 50%,
+            hsla(355, 100%, 93%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 80% 50%,
+            hsla(340, 100%, 76%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 0% 100%,
+            hsla(22, 100%, 77%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 80% 100%,
+            hsla(242, 100%, 70%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 0% 0%,
+            hsla(343, 100%, 76%, 1) 0px,
+            transparent 50%
+          );
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .daba {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+      }
+      .box {
+        padding: 1vw;
+        border-radius: 0.3vw;
+        transition: all 0.1s linear;
+        filter: blur(0.4vw);
+      }
+      .container {
+        position: absolute;
+        padding: 1vw;
+        background: linear-gradient(
+          to left,
+          rgba(255, 82, 82, 0.516),
+          rgba(84, 84, 255, 0.511)
+        );
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        z-index: -1;
+        box-shadow: 0px 0px 20px white;
+        transition: all 1s linear;
+        filter: blur(7vw);
+        left: 0px;
+        top: 0px;
+      }
+      .cont_2 {
+        position: absolute;
+        padding: 1vw;
+        background: linear-gradient(
+          to left,
+          rgba(82, 243, 255, 0.516),
+          rgba(255, 84, 255, 0.511)
+        );
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        z-index: -1;
+        box-shadow: 0px 0px 20px white;
+        transition: all 1s linear;
+        filter: blur(7vw);
+        bottom: 0px;
+        right: 0px;
+      }
+      input {
+        padding: 1vw;
+        font-size: 1.2rem;
+        color: white;
+        background: rgba(255, 255, 255, 0.36);
+        border: 1px solid rgba(255, 255, 255, 0.563);
+        border-radius: 0.4vw;
+        cursor: pointer;
+      }
+      input:hover {
+        background: rgba(255, 255, 255, 0.64);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="daba">
+      <div class="container"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="cont_2"></div>
+    </div>
+    <input type="button" value="Start the music" id="btn" />
+    <script src="js.js"></script>
+  </body>
+</html>
